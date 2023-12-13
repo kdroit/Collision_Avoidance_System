@@ -139,10 +139,10 @@ class Simulation_Display(QMainWindow):
         
     def closeMsg(self):
         """Remove the message"""
-        if (self._alert.findChild(QGraphicsTextItem)):
-            self._alert.children().remove(QGraphicsTextItem)
-        for child in (self._alert.children()):
-            self._alert.children().remove(child)
+        if (self.alert.findChild(QGraphicsTextItem)):
+            self.alert.children().remove(QGraphicsTextItem)
+        for child in (self.alert.children()):
+            self.alert.children().remove(child)
         self.alert.hide()
     
     def startAnimation(self):
