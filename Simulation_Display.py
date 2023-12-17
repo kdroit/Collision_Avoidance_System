@@ -18,6 +18,7 @@
 # 12/05/2023 # Keith Droit # Added code for the resetSimulation() method.
 ###############################################################################
 
+from PyQt6 import uic
 from PyQt6.QtCore import ( QSize, Qt, QPoint, QPropertyAnimation, QTimer,
                           QParallelAnimationGroup, QSequentialAnimationGroup)
 from PyQt6.QtWidgets import (QMainWindow, QGraphicsTextItem,
@@ -111,7 +112,8 @@ class Simulation_Display(QMainWindow):
 
     def addControlPanel(self):
         """Add the Control Panel"""
-        self.control_panel = Input(Simulation_Logic, self)
+        #self.control_panel = Input(Simulation_Logic, self)
+        self.control_panel = uic.loadUi("controlpanel.ui", self)
 
     def messageBox(self):
         """Set up the container for messages"""
