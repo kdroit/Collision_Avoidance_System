@@ -365,8 +365,8 @@ if __name__ == "__main__":
     location2 = QPoint(30, 600) # left lane
     window.moveCar(car, location2, 1000) # car moves to the left lane
     location3 = QPoint(30, 400) # center lane and forward
-    window.moveCar(car, location3, 1000) # car moves back to center lane
+    window.moveCar(car, location3, 2000) # car moves forward
     location4 = QPoint(150, 400) # center lane
-    window.moveCar(car, location4, 900)
+    window.moveCar(car, location4, 3000) # car moves right
    # window.set_cur_speed(15) # test
     app.exec()
